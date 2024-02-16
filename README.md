@@ -1,2 +1,2 @@
 # concept-website
-Just making a cocept for a chat website 🍎🍎🍎
+Just making a concept for a chat website 🍎🍎🍎
