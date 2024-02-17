@@ -1,2 +1,2 @@
 # concept-website
-Just making a concept for a chat website 🍎🍎🍎
+✨ Simple Chat Concept 🌐 – chat website concept with just HTML and CSS! 🦆
