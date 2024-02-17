@@ -1,62 +1,255 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concept</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="main.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <div class="container">
-          <section class="contact_list">
-               <div class="list">
-                    <ul>
-                         <li>Emma</li>
-                         <li>Liam</li>
-                         <li>Olivia</li>
-                         <li>Noah</li>
-                         <li>Ava</li>
-                         <li>Isabella</li>
-                         <li>Sophia</li>
-                         <li>Jackson</li>
-                         <li>Lucas</li>
-                         <li>Logan</li>
-                         <li>Ella</li>
-                         <li>Mia</li>
-                         <li>Emily</li>
-                    </ul>
-               </div>
-          </section>
-     
-          <section class="chat-box">
-               <div id="box">
-                    <div class="messages">
-                         <p class="sender">Matthew</p>
-                         <p class="content">Hi, my name is matthew.</p>
+    <div class="content">
+        <aside>
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="sideNav">
+                <div class="category">
+                    <div class="categoryTitle">
+                        MAIN
                     </div>
-                    <div class="reply">
-                         <p class="receiver">David</p>
-                         <p class="content">Don't tell me i'd forget i have dementia 🦆</p>
+                    <div class="categoryItems">
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i>Dashboard</li>
+                        </ul>
                     </div>
-                    <div class="messages">
-                         <p class="sender">Matthew</p>
-                         <p class="content">Lol whatever you say dude, heres some random shit lol Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Tempore dolor ut blanditiis beatae praesentium molestiae voluptatum suscipit explica
-                              bo amet quae! Recusandae placeat aspernatur voluptate obcaecati voluptatem, fugit sequi a molestias!
-                         </p>
+                </div>
+                <div class="category">
+                    <div class="categoryTitle">
+                        APPLICATIONS
                     </div>
-                    <div id="text_box">
-                         <input type="text" name="" id="input_text" placeholder="Type your message...">
-                         <button id="send_btn" onclick="send()">send</button>
+                    <div class="categoryItems">
+                        <ul>
+                            <li><i class="fa-solid fa-calendar-days"></i>Calender</li>
+                            <li id="selected"><i class="fa-solid fa-inbox"></i>Messages</li>
+                            <li><i class="fa-regular fa-user"></i>Contacts</li>
+                            <li><i class="fa-solid fa-user-group"></i>Groups</li>
+                            <li><i class="fa-regular fa-folder-closed"></i>Projects</li>
+                            <li><i class="fa-solid fa-list-ul"></i>Utilities</li>
+                        </ul>
                     </div>
-               </div>
-          </section>
-     
-          <section class="Previews">
-               <div class="preview_content">
-                    <p class="sender">matthew</p>
-               </div>
-          </section>
-     </div>
+                </div>
+                <div class="category">
+                    <div class="categoryTitle">
+                        EXTRA
+                    </div>
+                    <div class="categoryItems">
+                        <ul>
+                            <li><i class="fa-regular fa-copy"></i>inventory</li>
+                            <li><i class="fa-solid fa-table-columns"></i>Data Table</li>
+                            <li><i class="fa-solid fa-wallet"></i>Casino</li>
+                            <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="topLayer">
+                <div class="searchBox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Type to search...">
+                </div>
+                <div class="rightSide">
+                    <i class="fa-regular fa-image"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <div class="circle">
+                        <img src="./face1.jpg" alt="">
+                    </div>
+                    <p>David Ahonkhai <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+            </div>
+            <div class="bottomLayer">
+                <div class="bottomLeft">
+                    <div class="chatNav">
+                        <ul>
+                            <li id="active">All Conversations</li>
+                            <li>Archived</li>
+                        </ul>
+                    </div>
+                    <div class="recentChats">
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./download.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat" >
+                            <div class="recipientPhoto">
+                                <img src="./face2.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>cory dorsey</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./download.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./face2.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat" id="current">
+                            <div class="recipientPhoto">
+                                <img src="./download.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./download.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./face2.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./face2.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./download.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                        <div class="recentChat">
+                            <div class="recipientPhoto">
+                                <img src="./face2.jpg" alt="">
+                            </div>
+                            <div class="chatSummary">
+                                <p>Matthew</p>
+                                <p>Ok Thanks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottomMiddle">
+                    <div class="mainChattop">
+                        <div class="oneSide">
+                            <div class="recipientPhoto">
+                                <img src="./download.jpg" alt="">
+                            </div>
+                            <p>Matthew</p>
+                        </div>
+                        <div class="otherSide">
+                            <i class="fa-solid fa-user-lock" ></i>
+                            <i class="fa-solid fa-ellipsis" style="font-size: 30px;"></i>
+                        </div>
+                    </div>
+                    <div class="mainChat">
+                        <div class="chatPane">
+                            <div class="chatBox">
+                                <div class="chatBoxHeader">
+                                    <div class="recipientPhoto">
+                                        <img src="./face2.jpg" alt="">
+                                    </div>
+                                    <p>cory dorsey</p>
+                                    <p>2:21</p>
+                                </div>
+                                <div class="p">
+                                    Hey y'all
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus magnam quo, similique blanditiis accusamus expedita accusantium sit earum, eaque vitae nesciunt odit! Obcaecati nulla veritatis fugit non fuga voluptatum quis ullam eius id, dolorum laudantium maiores quos! Sed, distinctio.
+                                </div>
+                            </div>
+                            <div class="mychatBox">
+                                <div class="chatBoxHeader">
+                                    <div class="recipientPhoto">
+                                        <img src="./download.jpg" alt="">
+                                    </div>
+                                    <p>Matthew</p>
+                                    <p>2:21</p>
+                                </div>
+                                <div class="p">
+                                    Hey y'all
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus magnam quo, similique blanditiis accusamus expedita accusantium sit earum, eaque vitae nesciunt odit! Obcaecati nulla veritatis fugit non fuga voluptatum quis ullam eius id, dolorum laudantium maiores quos! Sed, distinctio.
+                                </div>
+                            </div>
+                            <div class="chatBox">
+                                <div class="chatBoxHeader">
+                                    <div class="recipientPhoto">
+                                        <img src="./face2.jpg" alt="">
+                                    </div>
+                                    <p>cory dorsey</p>
+                                    <p>2:21</p>
+                                </div>
+                                <div class="p">
+                                    Ok, Thanks
+                                </div>
+                            </div>
+                        </div>
+                        <div class="typeChat">
+                            <div class="inputBox">
+                                <input type="text" placeholder="Type your message">
+                                <div class="otherInput">
+                                    <i class="fa-solid fa-microphone"></i>
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomRight">
+                        <div class="profilePane">
+                            <div class="profilePhoto">
+                                <img src="./donload.jpg" alt="">
+                            </div>
+                            <p>Matthew "surname"</p>
+                            <p>concept designer i dunno lol he codes.</p>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
